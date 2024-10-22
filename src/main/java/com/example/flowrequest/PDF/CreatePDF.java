@@ -2,6 +2,7 @@ package com.example.flowrequest.PDF;
 
 import com.example.flowrequest.DTO.StatusChainDTO;
 import com.itextpdf.kernel.colors.ColorConstants;
+import com.itextpdf.kernel.colors.DeviceRgb;
 import com.itextpdf.kernel.pdf.PdfDocument;
 import com.itextpdf.kernel.pdf.PdfWriter;
 import com.itextpdf.layout.Document;
@@ -44,7 +45,7 @@ public class CreatePDF {
             statusDiv.setBorderRadius(new BorderRadius(11));
             statusDiv.setMarginLeft(20);
 //            statusDiv.setMarginTop(10);
-            SolidBorder border = new SolidBorder(ColorConstants.GREEN, 2);
+            SolidBorder border = new SolidBorder(new DeviceRgb(0, 100, 0), 2);
             statusDiv.setBorder(border);
             statusDiv.setPadding(5);
             cell.add(statusDiv);
